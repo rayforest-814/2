@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydration Formula</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    /* Container for the Formula */
+    .formula-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    /* Main Heading Style */
+    .hydration {
+      font-size: 4em;
+      font-weight: 700;
+      color: #2C3E50;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    /* Formula Text Style */
+    .formula {
+      font-size: 2.5em;
+      font-weight: 500;
+      color: #34495E;
+    }
+
+    .formula span {
+      color: #e74c3c;
+    }
+
+    /* Highlighting the Formula */
+    .formula .highlight {
+      font-weight: 700;
+      color: #2980b9;
+    }
+
+    /* Animated Effect on Hover */
+    .formula-container:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Adding a subtle background animation */
+    .formula-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #3498db, #8e44ad);
+      opacity: 0.1;
+      border-radius: 12px;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="formula-container">
+    <div class="hydration">HYDRATION</div>
+    <div class="formula">
+      <span>(SSR || SSG)</span> + <span class="highlight">SPA</span> ∈ CSR
+    </div>
+  </div>
+
+</body>
+</html>
